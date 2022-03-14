@@ -3,11 +3,13 @@ import dash_html_components as html
 from dash.dependencies import Input, Output, State
 import os
 import flask
-
+from whitenoise import WhiteNoise
 from apps import main, epam, amp 
 from app import app
 
+
 server = app.server
+server.wsgi_app = WhiteNoise(server.wsgi_app, root='static/')
 
 app.layout = html.Div(className="container", children=[
 	dcc.Location(id='url', refresh=False)
