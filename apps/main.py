@@ -97,6 +97,60 @@ layout = html.Div(className="container", children=[
                         html.H1('Courses:', className="header"),
                         html.Div(className = "cur", children=[
                               html.Div(className = "dates", children=[
+                                    html.Span("2021"),
+                              ]),
+                              html.Div(className = "text", children=[
+                                    html.Span("Microsoft power bi desktop & on-line"),
+                                    html.Span("LinkedIn Learning"),
+                              ])
+                        ]),
+                        html.Div(className = "cur", children=[
+                              html.Div(className = "dates", children=[
+                                    html.Span("2021"),
+                              ]),
+                              html.Div(className = "text", children=[
+                                    html.Span("Microsoft Azure Synapse for Developers"),
+                                    html.Span("LinkedIn Learning"),
+                              ])
+                        ]),
+                        html.Div(className = "cur", children=[
+                              html.Div(className = "dates", children=[
+                                    html.Span("2021"),
+                              ]),
+                              html.Div(className = "text", children=[
+                                    html.Span("Data Engineering Foundations"),
+                                    html.Span("LinkedIn Learning"),
+                              ])
+                        ]),
+                        html.Div(className = "cur", children=[
+                              html.Div(className = "dates", children=[
+                                    html.Span("2021"),
+                              ]),
+                              html.Div(className = "text", children=[
+                                    html.Span("Apache PySpark by Example"),
+                                    html.Span("LinkedIn Learning"),
+                              ])
+                        ]),
+                        html.Div(className = "cur", children=[
+                              html.Div(className = "dates", children=[
+                                    html.Span("2021"),
+                              ]),
+                              html.Div(className = "text", children=[
+                                    html.Span("Azure Spark Databricks Essential Training"),
+                                    html.Span("LinkedIn Learning"),
+                              ])
+                        ]),
+                        html.Div(className = "cur", children=[
+                              html.Div(className = "dates", children=[
+                                    html.Span("2021"),
+                              ]),
+                              html.Div(className = "text", children=[
+                                    html.Span("Python Data Analysis"),
+                                    html.Span("LinkedIn Learning"),
+                              ])
+                        ]),
+                        html.Div(className = "cur", children=[
+                              html.Div(className = "dates", children=[
                                     html.Span("2020"),
                               ]),
                               html.Div(className = "text", children=[
