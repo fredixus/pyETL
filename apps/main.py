@@ -4,7 +4,6 @@ import dash_html_components as html
 
 import datetime
 
-import plotly.graph_objs as go
 from dash.dependencies import Input, Output, State
 from dash import callback_context
 
