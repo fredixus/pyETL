@@ -9,7 +9,7 @@ from app import app
 
 
 server = app.server
-#server.wsgi_app = WhiteNoise(server.wsgi_app, root='static/')
+server.wsgi_app = WhiteNoise(server.wsgi_app, root='static/')
 
 app.layout = html.Div(className="container", children=[
 	dcc.Location(id='url', refresh=False)
