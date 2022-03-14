@@ -128,34 +128,5 @@ layout = html.Div(className="container", children=[
       html.Div(className="dataStorage", id='queryDataStorage_dis', style={'display':'none'}),
       #html.Div(className="data_output", id="etl-flow", style={'display':'block','width':'1000px','height': '500px','background-color':'#222'}),
       ]) 
-]) 
-
-@app.callback(
-      dash.dependencies.Output('etl-flow', 'children'),
-      [
-            dash.dependencies.Input('ftp_button', 'n_clicks'),
-            dash.dependencies.Input('csv_button', 'n_clicks'),
-            dash.dependencies.Input('excel_button', 'n_clicks'),
-            dash.dependencies.Input('clear_button', 'n_clicks'),
-      ],  
-      State('etl-flow', 'children'),
-    )
-def update_output(ftp, csv, excel, clear, content):
-      changed_id = [p['prop_id'] for p in callback_context.triggered][0]
-      #print(content)
-
-      if 'ftp_button' in changed_id:
-            content.append(html.Div(className="data_output", id= f"ftp_{ftp}", style={'background-color':'red','width':'200px','height': '200px'}),)
-            return content
-      elif 'csv_button' in changed_id:
-            content.append(html.Div(className="data_output", id= f"csv_{csv}", style={'background-color':'yellow','width':'200px','height': '200px'}),)
-            return content
-      elif 'excel_button' in changed_id:
-            content.append(html.Div(className="data_output", id= f"excel_{excel}", style={'background-color':'green','width':'200px','height': '200px'}),)
-            return content
-      elif 'clear_button' in changed_id:
-            #content.append(html.Div(className="data_output", id= f"excel_{excel}", style={'background-color':'green','width':'200px','height': '200px'}),)
-            return []
-      else:
-            return ["Nie kliknieto"]
+])
 
